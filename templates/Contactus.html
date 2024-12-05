@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     {% include "headerstyle.html" %}
+    <title>CONTACT US | ទំនាក់ទំនងយើង</title>
+    <link rel="icon" type="image/png" href="/static/contact-us%20(1).png">
+</head>
+{% include "navbar.html" %}
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container1 {
+
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        textarea {
+            resize: vertical;
+            height: 150px;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #333333;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0b0d2e;
+        }
+    </style>
+<body>
+
+<div class="container1">
+    <div class="container1">
+    <h2>Contact Us</h2>
+    <form
+            action="/submit_contact"
+            method="post"
+            enctype="multipart/form-data"
+    >
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea type="text" id="message" name="message" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+</div>
+
+</div>
+</body>
+{% include "footer_script.html" %}
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     {% include "headerstyle.html" %}
+    <title>ABOUT US | អំពីយើង</title>
+    <link rel="icon" type="image/png" href="/static/teamwork.png">
+</head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container1 {
+            width: 80%;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+            border-radius: 10px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 3em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            font-size: 2em;
+            margin-bottom: 15px;
+            color: #5a5a5a;
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 10px;
+        }
+        .section p {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #666;
+        }
+        .section img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .core-values {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .core-value {
+            flex: 1 1 calc(33% - 20px);
+            box-sizing: border-box;
+            margin: 10px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .core-value h3 {
+            margin-top: 0;
+            color: #4a4a4a;
+        }
+        .core-value p {
+            color: #777;
+        }
+        @media (max-width: 768px) {
+            .core-value {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+<body>
+{% include "navbar.html" %}
+<div class="container1">
+    <h1>About Us</h1>
+
+    <div class="section" id="mission">
+        <h2>Our Mission</h2>
+        <p>At <strong>Innovative Solutions Inc.</strong>, our mission is to transform ideas into cutting-edge solutions that empower our customers to thrive in a constantly evolving world. We are committed to excellence, integrity, and innovation in every aspect of our business.</p>
+    </div>
+
+    <div class="section" id="vision">
+        <h2>Our Vision</h2>
+        <p>Our vision is to be a global leader in technology and innovation, driving progress and creating a better future for generations to come. We envision a world where our solutions make life easier, businesses more efficient, and communities stronger.</p>
+    </div>
+
+    <div class="section" id="team">
+        <h2>Our Team</h2>
+        <img src="/static/Design%20Team.jpg" alt="Our Team">
+        <p>Our team is a diverse group of professionals with a shared passion for technology and innovation. From engineers and developers to designers and strategists, we collaborate to bring the best ideas to life. Our culture is built on trust, respect, and a commitment to continuous learning and growth.</p>
+    </div>
+
+    <div class="section" id="values">
+        <h2>Core Values</h2>
+        <div class="core-values">
+            <div class="core-value">
+                <h3>Innovation</h3>
+                <p>We believe in the power of creativity and ingenuity to solve complex problems and create unique solutions.</p>
+            </div>
+            <div class="core-value">
+                <h3>Integrity</h3>
+                <p>Our actions are guided by honesty, transparency, and a commitment to doing what is right.</p>
+            </div>
+            <div class="core-value">
+                <h3>Customer Focus</h3>
+                <p>We put our customers at the heart of everything we do, striving to exceed their expectations every day.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="history">
+        <h2>Our History</h2>
+        <p>Founded in 2010, <strong>Innovative Solutions Inc.</strong> started as a small startup with a big dream. Over the past decade, we have grown into a leading technology company, known for our groundbreaking products and exceptional service. Our journey is a testament to the hard work, dedication, and passion of our team.</p>
+    </div>
+
+</div>
+</body>
+{% include "footer_script.html" %}
+</html>

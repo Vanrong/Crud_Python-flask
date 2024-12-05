@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% include "headerstyle.html" %}
+    <title>Confirm_delete</title>
+</head>
+<body>
+{% include "navbar.html" %}
+<div class="container">
+        <div class="row">
+            <div class="col-12 mt-4">
+                <center>
+                    <h3>Do you want to delete ?</h3>
+                    <ul style="list-style-type: none">
+
+                        <li>Name:{{ product[0]['Name'] }}</li>
+                        <li>Cost:{{ product[0]['Cost'] }}</li>
+                        <li>Price:{{ product[0]['Price'] }}</li>
+
+
+                    </ul>
+                    <a href="crud" class="btn btn-sm btn-danger">Cancel</a>
+                    <a href="/delete?id={{ product[0]['Id'] }}" class="btn btn-sm btn-primary">Yes Delete</a>
+                </center>
+            </div>
+        </div>
+</div>
+</body>
+{% include "footer_script.html" %}
+</html>
